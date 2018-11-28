@@ -16,27 +16,20 @@ body  {
 </head>
 <script src="js/my_js.js"></script>
 <script src="../runing_minizinc.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-<style>
-body,h1,h2,h3,h4,h5 {
-font-family: 'Segoe Script', sans-serif;
-}
-body {font-size:16px;}
-.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-.w3-half img:hover{opacity:1}
-</style>
-<script type="text/javascript"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript">
    $(function() {
        $('#myDiet').click(function() {
            $('#abcde').show();
            return false;
-       });        
+       });
    });
    $(function() {
        $('#myMeasurement').click(function() {
            $('#abcd').show();
            return false;
-       });        
+       });
    });
 </script>
 <body id="body" style="overflow:hidden;">
@@ -48,23 +41,23 @@ body {font-size:16px;}
   <div class="w3-container">
     <h3 class="w3-padding-64"> User's Name  <br></b></h3>
   </div>
-  
+
   <div class="w3-bar-block">
 
-  
-  <a id="myDiet" href= "home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Create a diet plan</a>     
-	<a href= "checklist.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Adjust Food Preferences </a> 
-    <a href="tips.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Healthy Tips</a> 
-    <a href="measurements.html"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Body Measurements</a>	
+
+  <a id="myDiet" href= "home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Create a diet plan</a>
+	<a href= "checklist.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Adjust Food Preferences </a>
+    <a href="tips.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Healthy Tips</a>
+    <a href="measurements.html"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Body Measurements</a>
 	<a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Communication</a>
     <a href="foods.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Foods</a>
 	<a href="stats.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Statistics</a>
 	<a href="history.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">History</a>
 	<!--a href="index.html?logout='1'" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-red" style="color: red;">Logout</a-->
-  
-	
+
+
   </div>
- 
+
 </nav>
 
 <!-- Top menu on small screens -->
@@ -83,27 +76,27 @@ body {font-size:16px;}
   <div class="w3-container" style="margin-top:80px" id="showcase">
     <h1 class="w3-jumbo"><b>A Healthy diet just for you... </b></h1>
     <h1 class="w3-xxxlarge w3-text-black"><b>Welcome.</b></h1>
-	
+
   </div>
 <!-- Photo grid (modal) -->
-	
+
 
   <div class="w3-row-padding">
 
     <div class="w3-half">
       <img src="images/BMI-o.jpg" style="width:100%" onclick="div_show('abc')" alt="preparing salad">
-      <img src="images/happiness.png" style="width:100%" onclick="div_show('abcdef')" alt="happy face">                 
+      <img src="images/happiness.png" style="width:100%" onclick="div_show('abcdef')" alt="happy face">
     </div>
 
     <div class="w3-half">
       <img src="images/wood.jpg" style="width:100%" onclick="div_show('abcd')" alt="table">
       <img src="images/food.jpg" style="width:100%" onclick="window.location.href='diet.html'" alt="food">
-      
+
     </div>
   </div>
-  
- <div id="abc"> 
- 
+
+ <div id="abc">
+
   <!-- Popup Div Starts Here -->
 <div id="popupContact">
 <form action="#" id="form" method="value" name="form">
@@ -122,9 +115,9 @@ function myFunction() {
 	var x = document.getElementById("form").element[0].value;
 	var x1 = document.getElementById("form").element[1].value;
 	var x2 = document.getElementById("form").element[2].value;
-	
+
 	var bmi = x2 / (x1*x1);
-	
+
 </script>
 
 </div>
@@ -151,7 +144,7 @@ function myFunction() {
 <input id="thigh" name="thigh" placeholder="thigh (cm)" type="text"style="width:200px">
 <br> <br>
 <button type="submit" id="submit" name="submit_measurement">Save!</button>
-<br> 
+<br>
 </form>
 </div>
 <!-- Popup Div Ends Here -->
@@ -165,7 +158,7 @@ function myFunction() {
 <img id="close" src="images/close-icon.png" onclick ="div_hide('abcde')" width="35" height="35">
 <h2>Details about Diet Plan </h2>
 <hr>
-<h4> 
+<h4>
 
 Your diet plan is for 2537 kcal and <br>
 is suitable for  a woman with height 1.75 m and <br>
@@ -173,7 +166,7 @@ weight 65 kg. Also, you follow  a slightly active lifestyle <br>
 and you have as goal /a weight gaining <br>
 If you want to adjust any of the above details please clik <a href="updateData.html"><strong>HERE</strong></a> </h4>
 <button type="submit" id="submit" >Show diet-plan!</button>
-<br> 
+<br>
 </form>
 </div>
 <!-- Popup Div Ends Here -->
@@ -188,10 +181,10 @@ If you want to adjust any of the above details please clik <a href="updateData.h
 <img id="close" src="images/close-icon.png" onclick ="div_hide('abcdef')" width="35" height="35">
 <h2>Adjust a goal  </h2>
 <hr>
-<h4> 
+<h4>
 </h4>
 <button type="submit" id="submit" name="submit_goal">Save!</button>
-<br> 
+<br>
 </form>
 </div>
 <!-- Popup Div Ends Here -->
