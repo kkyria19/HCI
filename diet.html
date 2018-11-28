@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+	<title>Diet Form </title>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" href="../assets/img/logo.png" sizes="16x16">
+
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link href="css/elements.css" rel="stylesheet">		
+	<script src="js/my_js.js"></script>
+</head>
+<style>
+
+</style>
+<body id="body" style="overflow:hidden;">
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-sand w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+  
+    <h3 class="w3-padding-64">User's Name</b></h3>
+    
+  </div>
+  <div class="w3-bar-block">
+	<a id="myDiet" href= "home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Create a diet plan</a>     
+	<a href= "checklist.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Adjust Food Preferences </a> 
+    <a href="tips.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Healthy Tips</a> 
+    <a href="measurements.html"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Body Measurements</a>	
+	<a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Communication</a>
+    <a href="foods.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Foods</a>
+	<a href="stats.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Statistics</a>
+	<a href="history.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">History</a>
+	<!--a href="index.html?logout='1'" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-red" style="color: red;">Logout</a-->
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-sand w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-sand w3-margin-right" onclick="w3_open()">☰</a>
+  <span>User's Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h3 class="w3-xxxlarge"><b>Do not give up what you want most... </b></h3>
+    <h3 class="w3-xxxlarge w3-text-red"><b>...for something you want right now.</b></h3>
+  </div>
+
+<div class="container ">
+  
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default ">
+      <div class="panel-heading  ">
+        <h4 class="panel-title w3-sand">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Monday">Monday</a>		  
+        </h4>
+      </div>
+      <div id="Monday" class="panel-collapse collapse in">
+        <div class="panel-body">
+		<h5> <strong> Breakfast<br></strong>		
+				Avocado-Egg Toast <br>
+				• 1 slice whole-grain bread<br>
+				• 1/2 medium avocado<br>
+				• 1 large egg, cooked in 1/4 tsp. <br>
+				olive oil or coat pan with a thin layer of cooking spray (1-second spray)<br>
+				Season egg with a pinch of salt and pepper.<br>
+				• 1 medium banana <br> 
+		</h5>		
+		<h5><strong> Morning Snack <br></strong>
+				• 1 medium apple<br>
+				• 2 Tbsp. peanut butter<br>
+		</h5>
+		<h5><strong> Lunch<br></strong>
+			• 2 cups Ravioli & Vegetable Soup<br>
+			• 2 diagonal slices baguette (1/4 inch thick), preferably whole-wheat<br>
+			• 3 Tbsp. shredded Cheddar cheese<br>
+			Top baguette slices with 1 1/2 Tbsp. cheese each and a pinch of pepper. Toast until cheese is melted.<br>
+			• 1 medium orange<br></h5>
+		
+		<h5><strong> Afternoon Snack<br></strong>
+			• 5 Tbsp. hummus<br>
+			• 1 cup sliced cucumber<br>
+			• 2 medium carrots<br></h5>
+		
+		<h5><strong> Dinner<br> </strong>
+			Salmon & Vegetables<br>
+			• 4 oz. baked salmon<br>
+			• 1 cup roasted Brussels sprouts<br>
+			• 1 cup brown rice<br>
+			• 1/8 tsp. salt<br>
+			• 1/8 tsp. pepper<br>
+			• 1 1/2 Tbsp. walnuts<br></h5>	
+				
+		</div>
+      </div>
+    </div>
+	<div class="panel panel-default">
+      <div class="panel-heading ">
+        <h4 class="panel-title  w3-sand ">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Tuesday">Tuesday</a>
+        </h4>
+      </div>
+      <div id="Tuesday" class="panel-collapse collapse">
+        <div class="panel-body">
+		<h5><strong> Breakfast<br></strong>	
+				Avocado-Egg Toast <br>
+				• 1 slice whole-grain bread<br>
+				• 1/2 medium avocado<br>
+				• 1 large egg, cooked in 1/4 tsp. <br>
+				olive oil or coat pan with a thin layer of cooking spray (1-second spray)<br>
+				Season egg with a pinch of salt and pepper.<br>
+				• 1 medium banana <br> 
+				</h5>
+		<h5><strong> Morning Snack <br></strong>
+				• 1 medium apple<br>
+				• 2 Tbsp. peanut butter<br>
+		</h5>
+		<h5><strong> Lunch<br></strong>
+			• 2 cups Ravioli & Vegetable Soup<br>
+			• 2 diagonal slices baguette (1/4 inch thick), preferably whole-wheat<br>
+			• 3 Tbsp. shredded Cheddar cheese<br>
+			Top baguette slices with 1 1/2 Tbsp. cheese each and a pinch of pepper. Toast until cheese is melted.<br>
+			• 1 medium orange<br></h5>
+		
+		<h5><strong> Afternoon Snack<br></strong>
+			• 5 Tbsp. hummus<br>
+			• 1 cup sliced cucumber<br>
+			• 2 medium carrots<br></h5>
+		
+		<h5><strong> Dinner<br> </strong>
+			Salmon & Vegetables<br>
+			• 4 oz. baked salmon<br>
+			• 1 cup roasted Brussels sprouts<br>
+			• 1 cup brown rice<br>
+			• 1/8 tsp. salt<br>
+			• 1/8 tsp. pepper<br>
+			• 1 1/2 Tbsp. walnuts<br></h5>	
+		
+		</div>
+      </div>
+    </div>
+	<div class="panel panel-default">
+      <div class="panel-heading ">
+        <h4 class="panel-title w3-sand">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Wednesday">Wednesday</a>
+        </h4>
+      </div>
+      <div id="Wednesday" class="panel-collapse collapse">
+        <div class="panel-body">
+		<h5><strong> Breakfast<br></strong>	
+				Avocado-Egg Toast <br>
+				• 1 slice whole-grain bread<br>
+				• 1/2 medium avocado<br>
+				• 1 large egg, cooked in 1/4 tsp. <br>
+				olive oil or coat pan with a thin layer of cooking spray (1-second spray)<br>
+				Season egg with a pinch of salt and pepper.<br>
+				• 1 medium banana <br> 
+				</h5>
+		<h5><strong> Morning Snack <br></strong>
+				• 1 medium apple<br>
+				• 2 Tbsp. peanut butter<br>
+		</h5>
+		<h5><strong> Lunch<br></strong>
+			• 2 cups Ravioli & Vegetable Soup<br>
+			• 2 diagonal slices baguette (1/4 inch thick), preferably whole-wheat<br>
+			• 3 Tbsp. shredded Cheddar cheese<br>
+			Top baguette slices with 1 1/2 Tbsp. cheese each and a pinch of pepper. Toast until cheese is melted.<br>
+			• 1 medium orange<br></h5>
+		
+		<h5><strong> Afternoon Snack<br></strong>
+			• 5 Tbsp. hummus<br>
+			• 1 cup sliced cucumber<br>
+			• 2 medium carrots<br></h5>
+		
+		<h5><strong> Dinner<br> </strong>
+			Salmon & Vegetables<br>
+			• 4 oz. baked salmon<br>
+			• 1 cup roasted Brussels sprouts<br>
+			• 1 cup brown rice<br>
+			• 1/8 tsp. salt<br>
+			• 1/8 tsp. pepper<br>
+			• 1 1/2 Tbsp. walnuts<br></h5>	
+		</div>
+      </div>
+    </div>
+	
+	
+	<div class="panel panel-default">
+      <div class="panel-heading ">
+        <h4 class="panel-title w3-sand">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Thursday">Thursday</a>
+        </h4>
+      </div>
+      <div id="Thursday" class="panel-collapse collapse">
+        <div class="panel-body">
+		<h5><strong> Breakfast<br></strong></h5>		
+				Avocado-Egg Toast <br>
+				• 1 slice whole-grain bread<br>
+				• 1/2 medium avocado<br>
+				• 1 large egg, cooked in 1/4 tsp. <br>
+				olive oil or coat pan with a thin layer of cooking spray (1-second spray)<br>
+				Season egg with a pinch of salt and pepper.<br>
+				• 1 medium banana <br> 
+		<h5><strong> Morning Snack <br></strong>
+				• 1 medium apple<br>
+				• 2 Tbsp. peanut butter<br>
+		</h5>
+		<h5><strong> Lunch<br></strong>
+			• 2 cups Ravioli & Vegetable Soup<br>
+			• 2 diagonal slices baguette (1/4 inch thick), preferably whole-wheat<br>
+			• 3 Tbsp. shredded Cheddar cheese<br>
+			Top baguette slices with 1 1/2 Tbsp. cheese each and a pinch of pepper. Toast until cheese is melted.<br>
+			• 1 medium orange<br></h5>
+		
+		<h5><strong> Afternoon Snack<br></strong>
+			• 5 Tbsp. hummus<br>
+			• 1 cup sliced cucumber<br>
+			• 2 medium carrots<br></h5>
+		
+		<h5><strong> Dinner<br> </strong>
+			Salmon & Vegetables<br>
+			• 4 oz. baked salmon<br>
+			• 1 cup roasted Brussels sprouts<br>
+			• 1 cup brown rice<br>
+			• 1/8 tsp. salt<br>
+			• 1/8 tsp. pepper<br>
+			• 1 1/2 Tbsp. walnuts<br></h5>	
+		</div>
+      </div>
+    </div>
+	
+	
+	
+	<div class="panel panel-default">
+      <div class="panel-heading ">
+        <h4 class="panel-title w3-sand">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Friday">Friday</a>
+        </h4>
+      </div>
+      <div id="Friday" class="panel-collapse collapse">
+        <div class="panel-body">
+		<h5><strong> Breakfast<br></strong></h5>		
+				Avocado-Egg Toast <br>
+				• 1 slice whole-grain bread<br>
+				• 1/2 medium avocado<br>
+				• 1 large egg, cooked in 1/4 tsp. <br>
+				olive oil or coat pan with a thin layer of cooking spray (1-second spray)<br>
+				Season egg with a pinch of salt and pepper.<br>
+				• 1 medium banana <br> 
+		<h5><strong> Morning Snack <br></strong>
+				• 1 medium apple<br>
+				• 2 Tbsp. peanut butter<br>
+		</h5>
+		<h5><strong> Lunch<br></strong>
+			• 2 cups Ravioli & Vegetable Soup<br>
+			• 2 diagonal slices baguette (1/4 inch thick), preferably whole-wheat<br>
+			• 3 Tbsp. shredded Cheddar cheese<br>
+			Top baguette slices with 1 1/2 Tbsp. cheese each and a pinch of pepper. Toast until cheese is melted.<br>
+			• 1 medium orange<br></h5>
+		
+		<h5><strong> Afternoon Snack<br></strong>
+			• 5 Tbsp. hummus<br>
+			• 1 cup sliced cucumber<br>
+			• 2 medium carrots<br></h5>
+		
+		<h5><strong> Dinner<br> </strong>
+			Salmon & Vegetables<br>
+			• 4 oz. baked salmon<br>
+			• 1 cup roasted Brussels sprouts<br>
+			• 1 cup brown rice<br>
+			• 1/8 tsp. salt<br>
+			• 1/8 tsp. pepper<br>
+			• 1 1/2 Tbsp. walnuts<br></h5>	
+		</div>
+      </div>
+    </div>
+	
+	
+	
+	<div class="panel panel-default">
+      <div class="panel-heading ">
+        <h4 class="panel-title w3-sand">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Saturday">Saturday</a>
+        </h4>
+      </div>
+      <div id="Saturday" class="panel-collapse collapse">
+        <div class="panel-body">
+		
+		<h5><strong> Breakfast<br></strong></h5>		
+				Avocado-Egg Toast <br>
+				• 1 slice whole-grain bread<br>
+				• 1/2 medium avocado<br>
+				• 1 large egg, cooked in 1/4 tsp. <br>
+				olive oil or coat pan with a thin layer of cooking spray (1-second spray)<br>
+				Season egg with a pinch of salt and pepper.<br>
+				• 1 medium banana <br> 
+		<h5><strong> Morning Snack <br></strong>
+				• 1 medium apple<br>
+				• 2 Tbsp. peanut butter<br>
+		</h5>
+		<h5><strong> Lunch<br></strong>
+			• 2 cups Ravioli & Vegetable Soup<br>
+			• 2 diagonal slices baguette (1/4 inch thick), preferably whole-wheat<br>
+			• 3 Tbsp. shredded Cheddar cheese<br>
+			Top baguette slices with 1 1/2 Tbsp. cheese each and a pinch of pepper. Toast until cheese is melted.<br>
+			• 1 medium orange<br></h5>
+		
+		<h5><strong> Afternoon Snack<br></strong>
+			• 5 Tbsp. hummus<br>
+			• 1 cup sliced cucumber<br>
+			• 2 medium carrots<br></h5>
+		
+		<h5><strong> Dinner<br> </strong>
+			Salmon & Vegetables<br>
+			• 4 oz. baked salmon<br>
+			• 1 cup roasted Brussels sprouts<br>
+			• 1 cup brown rice<br>
+			• 1/8 tsp. salt<br>
+			• 1/8 tsp. pepper<br>
+			• 1 1/2 Tbsp. walnuts<br></h5>	
+		</div>
+      </div>
+    </div>
+	
+	
+	<div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title w3-sand">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Sunday">Sunday</a>
+        </h4>
+      </div>
+      <div id="Sunday" class="panel-collapse collapse">
+        <div class="panel-body">
+		<h5><strong> Breakfast<br></strong></h5>		
+				Avocado-Egg Toast <br>
+				• 1 slice whole-grain bread<br>
+				• 1/2 medium avocado<br>
+				• 1 large egg, cooked in 1/4 tsp. <br>
+				olive oil or coat pan with a thin layer of cooking spray (1-second spray)<br>
+				Season egg with a pinch of salt and pepper.<br>
+				• 1 medium banana <br> 
+		<h5><strong> Morning Snack <br></strong>
+				• 1 medium apple<br>
+				• 2 Tbsp. peanut butter<br>
+		</h5>
+		<h5><strong> Lunch<br></strong>
+			• 2 cups Ravioli & Vegetable Soup<br>
+			• 2 diagonal slices baguette (1/4 inch thick), preferably whole-wheat<br>
+			• 3 Tbsp. shredded Cheddar cheese<br>
+			Top baguette slices with 1 1/2 Tbsp. cheese each and a pinch of pepper. Toast until cheese is melted.<br>
+			• 1 medium orange<br></h5>
+		
+		<h5><strong> Afternoon Snack<br></strong>
+			• 5 Tbsp. hummus<br>
+			• 1 cup sliced cucumber<br>
+			• 2 medium carrots<br></h5>
+		
+		<h5><strong> Dinner<br> </strong>
+			Salmon & Vegetables<br>
+			• 4 oz. baked salmon<br>
+			• 1 cup roasted Brussels sprouts<br>
+			• 1 cup brown rice<br>
+			• 1/8 tsp. salt<br>
+			• 1/8 tsp. pepper<br>
+			• 1 1/2 Tbsp. walnuts<br></h5>	
+		
+		</div>
+      </div>
+    </div>
+    
+   
+  </div> 
+</div> 
+
+
+<button type="button" class=" btn-danger "style="width:30%" onclick="window.location.href=' '">Save diet plan!!</button>
+<button type="button" class=" btn-warning "style="width:30%" onclick="window.location.href='checklist.html'">Adjust Food Preferences!</button>
+<br>
+<br>
+</div>
+    <!-- !PAGE CONTENT FINISH! -->
+</body>
+</html>

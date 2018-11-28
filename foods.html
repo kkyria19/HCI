@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+	<title>Foods </title>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" href="../assets/img/logo.png" sizes="16x16">
+
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link href="css/elements.css" rel="stylesheet">		
+	<script src="js/my_js.js"></script>
+</head>
+<style>
+
+</style>
+<body id="body" style="overflow:hidden;">
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-sand w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+  
+    <h3 class="w3-padding-64">User's Name</b></h3>
+    
+  </div>
+   <div class="w3-bar-block">
+<a id="myDiet" href= "home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Create a diet plan</a>     
+	<a href= "checklist.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Adjust Food Preferences </a> 
+    <a href="tips.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Healthy Tips</a> 
+    <a href="measurements.html"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Body Measurements</a>	
+	<a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Communication</a>
+    <a href="foods.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Foods</a>
+	<a href="stats.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Statistics</a>
+	<a href="history.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">History</a>
+	<!--a href="index.html?logout='1'" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-red" style="color: red;">Logout</a-->
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-sand w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-sand w3-margin-right" onclick="w3_open()">☰</a>
+  <span>User's Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+ <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h3 class="w3-xxxlarge"><b>Do not give up what you want most... </b></h3>
+    <h3 class="w3-xxxlarge w3-text-red"><b>...for something you want right now.</b></h3>
+  </div>
+
+
+<div class="container ">
+  
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default ">
+      <div class="panel-heading  ">
+        <h4 class="panel-title w3-sand">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Group1">Group 1: Milk and dairy products</a>		  
+        </h4>
+      </div>
+      <div id="Group1" class="panel-collapse collapse in">
+        <div class="panel-body">
+		<h5><strong> Skimmed milk </strong></h5>	
+		 
+		<h5><strong> Semi-Skimmed milk </strong></h5>	
+		
+		<h5><strong> Full-fat milk </strong></h5>		
+				
+		</div>
+      </div>
+	 </div>
+	<div class="panel panel-default">
+      <div class="panel-heading ">
+        <h4 class="panel-title  w3-sand ">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Group2">Group 2: Vegetables</a>
+        </h4>
+      </div>
+      <div id="Group2" class="panel-collapse collapse">
+        <div class="panel-body">
+			
+			
+			
+			
+			
+		</div>
+	  </div>
+   </div>
+    
+   <div class="panel panel-default">
+      <div class="panel-heading ">
+        <h4 class="panel-title  w3-sand ">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Group3">Group 3: Fruits and juices</a>
+        </h4>
+      </div>
+      <div id="Group3" class="panel-collapse collapse">
+        <div class="panel-body">
+			
+			
+			
+			
+			
+			
+		</div>
+	  </div>
+   </div>
+   
+   <div class="panel panel-default">
+      <div class="panel-heading ">
+        <h4 class="panel-title  w3-sand ">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Group4">Group 4: Bread - Cereals - Pulses - Stuffed Vegetables</a>
+        </h4>
+      </div>
+      <div id="Group4" class="panel-collapse collapse">
+        <div class="panel-body">
+		
+		
+		
+		
+		
+		
+		</div>
+	  </div>
+   </div>
+   
+   
+   <div class="panel panel-default">
+      <div class="panel-heading ">
+        <h4 class="panel-title  w3-sand ">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Group5">Group 5: Meat and substitutes</a>
+        </h4>
+      </div>
+      <div id="Group5" class="panel-collapse collapse">
+        <div class="panel-body">
+			<h5><strong> Very lean meat and substitutes</strong></h5>
+			
+			<h5><strong> lean meat and substitutes</strong></h5>
+			
+			<h5><strong> Semi fat meat and substitutes</strong></h5>
+			
+			<h5><strong> Rich in fat meat and substitutes</strong></h5>
+			
+		</div>
+	  </div>
+   </div>
+   
+   <div class="panel panel-default">
+      <div class="panel-heading ">
+        <h4 class="panel-title  w3-sand ">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Group6">Group 6: Fats and oils </a>
+        </h4>
+      </div>
+      <div id="Group6" class="panel-collapse collapse">
+        <div class="panel-body">
+			
+		</div>
+	  </div>
+   </div>
+   
+   
+   
+  </div> 
+</div>
+</div>
+    <!-- !PAGE CONTENT FINISH! -->
+</body>
+</html>

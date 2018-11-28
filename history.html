@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+	<title>History </title>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" href="../assets/img/logo.png" sizes="16x16">
+
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link href="css/elements.css" rel="stylesheet">		
+	<script src="js/my_js.js"></script>
+</head>
+<style>
+
+</style>
+<body id="body" style="overflow:hidden;">
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-sand w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+  
+    <h3 class="w3-padding-64">User's Name</b></h3>
+    
+  </div>
+   <div class="w3-bar-block">
+	<a id="myDiet" href= "home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Create a diet plan</a>     
+	<a href= "checklist.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Adjust Food Preferences </a> 
+    <a href="tips.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Healthy Tips</a> 
+    <a href="measurements.html"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Body Measurements</a>	
+	<a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Communication</a>
+    <a href="foods.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Foods</a>
+	<a href="stats.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Statistics</a>
+	<a href="history.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">History</a>
+	<!--a href="index.html?logout='1'" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-red" style="color: red;">Logout</a-->
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-sand w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-sand w3-margin-right" onclick="w3_open()">☰</a>
+  <span>User's Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+ <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h3 class="w3-xxxlarge"><b>Have you forgot your weekly diet ? </b></h3>
+    <h3 class="w3-xxxlarge w3-text-green"><b>...Never Mind :)</b></h3>
+  </div>
+
+<div class="container ">
+  
+  <div class="panel-group" id="accordion">
+    
+	<!--Monday-->
+    <div class="w3-panel w3-blue w3-round-xlarge">
+      <div class="panel-heading  ">
+        <h4 class="panel-title w3-sand">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Monday"><strong>Monday:</strong></a> <br> 	 
+		  <a data-toggle="collapse" data-parent="#accordion" href="#Monday">26/11/2018:</a> <br>  
+        </h4>
+      </div>
+      <div id="Monday" class="panel-collapse collapse in">
+        <div class="panel-body">
+	    <a data-toggle="collapse" data-parent="#accordion" href="#Breakfast"><strong>Breakfast:</strong></a><br>
+		<h5> All-Bran cereals </h5>	</a>
+		<h5> Skimmed milk </h5>	
+		<a data-toggle="collapse" data-parent="#accordion" href="#lunch"><strong>Lunch:</strong></a><br>
+		<h5> Spinach Salad </h5>	</a>
+		<a data-toggle="collapse" data-parent="#accordion" href="#supper"><strong>Supper:</strong></a><br>
+		<h5> 1 cup baby carrots  </h5>	</a>
+		<h5> sugar snap peas </h5>	
+		<a data-toggle="collapse" data-parent="#accordion" href="#dinner"><strong>Dinner:</strong></a><br>
+		<h5> 4 oz salmon    </h5>	</a>
+		<h5> 1 cup steamed carrotsk </h5>	
+		<h5> 2 tablespoons teriyaki sauce </h5>	
+		<h5> 1 teaspoon sesame seeds </h5>	
+		<h5> 1 cup steamed broccoli </h5>	
+
+		</div>
+      </div>
+	 </div>
+
+	<!--Tuesday-->
+	    <div class="w3-panel w3-light-blue w3-round-xlarge" ">
+      <div class="panel-heading  ">
+        <h4 class="panel-title w3-sand">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Tuesday"><strong>Tuesday:</strong></a> <br> 	 
+		  <a data-toggle="collapse" data-parent="#accordion" href="#Tuesday">27/11/2018:</a> <br>  
+        </h4>
+      </div>
+      <div id="Tuesday" class="panel-collapse collapse in">
+        <div class="panel-body">
+	    <a data-toggle="collapse" data-parent="#accordion" href="#Breakfast"><strong>Breakfast:</strong></a><br>
+		<h5> All-Bran cereals </h5>	</a>
+		<h5> Skimmed milk </h5>	
+		<a data-toggle="collapse" data-parent="#accordion" href="#lunch"><strong>Lunch:</strong></a><br>
+		<h5> Spinach Salad </h5>	</a>
+		<a data-toggle="collapse" data-parent="#accordion" href="#supper"><strong>Supper:</strong></a><br>
+		<h5> 1 cup baby carrots  </h5>	</a>
+		<h5> sugar snap peas </h5>	
+		<a data-toggle="collapse" data-parent="#accordion" href="#dinner"><strong>Dinner:</strong></a><br>
+		<h5> 4 oz salmon    </h5>	</a>
+		<h5> 1 cup steamed carrotsk </h5>	
+		<h5> 2 tablespoons teriyaki sauce </h5>	
+		<h5> 1 teaspoon sesame seeds </h5>	
+		<h5> 1 cup steamed broccoli </h5>	
+		</div>
+	  </div>
+   </div>
+    
+	
+
+	<!--Wednesday-->
+	
+	    <div class="w3-panel w3-blue w3-round-xlarge ">
+      <div class="panel-heading  ">
+        <h4 class="panel-title w3-sand">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Wednesday"><strong>Wednesday:</strong></a> <br> 	 
+		  <a data-toggle="collapse" data-parent="#accordion" href="#Wednesday">28/11/2018:</a> <br>  
+        </h4>
+      </div>
+      <div id="Wednesday" class="panel-collapse collapse in">
+        <div class="panel-body">
+	    <a data-toggle="collapse" data-parent="#accordion" href="#Breakfast"><strong>Breakfast:</strong></a><br>
+		<h5> All-Bran cereals </h5>	</a>
+		<h5> Skimmed milk </h5>	
+		<a data-toggle="collapse" data-parent="#accordion" href="#lunch"><strong>Lunch:</strong></a><br>
+		<h5> Spinach Salad </h5>	</a>
+		<a data-toggle="collapse" data-parent="#accordion" href="#supper"><strong>Supper:</strong></a><br>
+		<h5> 1 cup baby carrots  </h5>	</a>
+		<h5> sugar snap peas </h5>	
+		<a data-toggle="collapse" data-parent="#accordion" href="#dinner"><strong>Dinner:</strong></a><br>
+		<h5> 4 oz salmon    </h5>	</a>
+		<h5> 1 cup steamed carrotsk </h5>	
+		<h5> 2 tablespoons teriyaki sauce </h5>	
+		<h5> 1 teaspoon sesame seeds </h5>	
+		<h5> 1 cup steamed broccoli </h5>	
+		</div>
+	  </div>
+   </div>
+   
+   
+   
+   	<!--Thursday-->
+
+   	    <div class="w3-panel w3-light-blue w3-round-xlarge" ">
+      <div class="panel-heading  ">
+        <h4 class="panel-title w3-sand">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Thursday"><strong>Thursday:</strong></a> <br> 	 
+		  <a data-toggle="collapse" data-parent="#accordion" href="#Thursday">29/11/2018:</a> <br>  
+        </h4>
+      </div>
+      <div id="Thursday" class="panel-collapse collapse in">
+        <div class="panel-body">
+	    <a data-toggle="collapse" data-parent="#accordion" href="#Breakfast"><strong>Breakfast:</strong></a><br>
+		<h5> All-Bran cereals </h5>	</a>
+		<h5> Skimmed milk </h5>	
+		<a data-toggle="collapse" data-parent="#accordion" href="#lunch"><strong>Lunch:</strong></a><br>
+		<h5> Spinach Salad </h5>	</a>
+		<a data-toggle="collapse" data-parent="#accordion" href="#supper"><strong>Supper:</strong></a><br>
+		<h5> 1 cup baby carrots  </h5>	</a>
+		<h5> sugar snap peas </h5>	
+		<a data-toggle="collapse" data-parent="#accordion" href="#dinner"><strong>Dinner:</strong></a><br>
+		<h5> 4 oz salmon    </h5>	</a>
+		<h5> 1 cup steamed carrotsk </h5>	
+		<h5> 2 tablespoons teriyaki sauce </h5>	
+		<h5> 1 teaspoon sesame seeds </h5>	
+		<h5> 1 cup steamed broccoli </h5>	
+		</div>
+	  </div>
+   </div>
+   
+   <!--Friday-->
+  	    <div class="w3-panel w3-blue w3-round-xlarge ">
+      <div class="panel-heading  ">
+        <h4 class="panel-title w3-sand">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Friday"><strong>Friday:</strong></a> <br> 	 
+		  <a data-toggle="collapse" data-parent="#accordion" href="#Friday">30/11/2018:</a> <br>  
+        </h4>
+      </div>
+      <div id="Friday" class="panel-collapse collapse in">
+        <div class="panel-body">
+	    <a data-toggle="collapse" data-parent="#accordion" href="#Breakfast"><strong>Breakfast:</strong></a><br>
+		<h5> All-Bran cereals </h5>	</a>
+		<h5> Skimmed milk </h5>	
+		<a data-toggle="collapse" data-parent="#accordion" href="#lunch"><strong>Lunch:</strong></a><br>
+		<h5> Spinach Salad </h5>	</a>
+		<a data-toggle="collapse" data-parent="#accordion" href="#supper"><strong>Supper:</strong></a><br>
+		<h5> 1 cup baby carrots  </h5>	</a>
+		<h5> sugar snap peas </h5>	
+		<a data-toggle="collapse" data-parent="#accordion" href="#dinner"><strong>Dinner:</strong></a><br>
+		<h5> 4 oz salmon    </h5>	</a>
+		<h5> 1 cup steamed carrotsk </h5>	
+		<h5> 2 tablespoons teriyaki sauce </h5>	
+		<h5> 1 teaspoon sesame seeds </h5>	
+		<h5> 1 cup steamed broccoli </h5>	
+		</div>
+	  </div>
+   </div>
+   <!--Saturday-->
+	  <div class="w3-panel w3-light-blue w3-round-xlarge" "> <!--w3-panel w3-red"-->
+      <div class="panel-heading  ">
+        <h4 class="panel-title w3-sand">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Saturday"><strong>Saturday:</strong></a> <br> 	 
+		  <a data-toggle="collapse" data-parent="#accordion" href="#Saturday">01/12/2018:</a> <br>  
+        </h4>
+      </div>
+      <div id="Saturday" class="panel-collapse collapse in">
+        <div class="panel-body">
+	    <a data-toggle="collapse" data-parent="#accordion" href="#Breakfast"><strong>Breakfast:</strong></a><br>
+		<h5> All-Bran cereals </h5>	</a>
+		<h5> Skimmed milk </h5>	
+		<a data-toggle="collapse" data-parent="#accordion" href="#lunch"><strong>Lunch:</strong></a><br>
+		<h5> Spinach Salad </h5>	</a>
+		<a data-toggle="collapse" data-parent="#accordion" href="#supper"><strong>Supper:</strong></a><br>
+		<h5> 1 cup baby carrots  </h5>	</a>
+		<h5> sugar snap peas </h5>	
+		<a data-toggle="collapse" data-parent="#accordion" href="#dinner"><strong>Dinner:</strong></a><br>
+		<h5> 4 oz salmon    </h5>	</a>
+		<h5> 1 cup steamed carrotsk </h5>	
+		<h5> 2 tablespoons teriyaki sauce </h5>	
+		<h5> 1 teaspoon sesame seeds </h5>	
+		<h5> 1 cup steamed broccoli </h5>	class="panel-body">
+			
+		</div>
+	  </div>
+   </div>
+   
+  
+   
+    <!-- Sunday-->
+   	    <div class="w3-panel w3-blue w3-round-xlarge ">
+      <div class="panel-heading  ">
+        <h4 class="panel-title w3-sand">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Sunday"><strong>Sunday:</strong></a> <br> 	 
+		  <a data-toggle="collapse" data-parent="#accordion" href="#Sunday">02/12/2018:</a> <br>  
+        </h4>
+      </div>
+      <div id="Sunday" class="panel-collapse collapse in">
+        <div class="panel-body">
+	    <a data-toggle="collapse" data-parent="#accordion" href="#Breakfast"><strong>Breakfast:</strong></a><br>
+		<h5> All-Bran cereals </h5>	</a>
+		<h5> Skimmed milk </h5>	
+		<a data-toggle="collapse" data-parent="#accordion" href="#lunch"><strong>Lunch:</strong></a><br>
+		<h5> Spinach Salad </h5>	</a>
+		<a data-toggle="collapse" data-parent="#accordion" href="#supper"><strong>Supper:</strong></a><br>
+		<h5> 1 cup baby carrots  </h5>	</a>
+		<h5> sugar snap peas </h5>	
+		<a data-toggle="collapse" data-parent="#accordion" href="#dinner"><strong>Dinner:</strong></a><br>
+		<h5> 4 oz salmon    </h5>	</a>
+		<h5> 1 cup steamed carrotsk </h5>	
+		<h5> 2 tablespoons teriyaki sauce </h5>	
+		<h5> 1 teaspoon sesame seeds </h5>	
+		<h5> 1 cup steamed broccoli </h5>	
+   
+   
+  </div> 
+</div>
+</div>
+    <!-- !PAGE CONTENT FINISH! -->
+</body>
+</html>

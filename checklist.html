@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+	<title>Check out Foods </title>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" href="../assets/img/logo.png" sizes="16x16">
+
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link href="css/elements.css" rel="stylesheet">		
+	<link href="css/checklist.css" rel="stylesheet">	
+	<script src="js/my_js.js"></script>
+	
+</head>
+<style>
+
+</style>
+<body id="body" style="overflow:hidden;">
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-sand w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+  
+    <h3 class="w3-padding-64">User's Name </b></h3>
+    
+  </div>
+ 
+  
+  <div class="w3-bar-block">
+	<a id="myDiet" href= "home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Create a diet plan</a>     
+	<a href= "checklist.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Adjust Food Preferences </a> 
+    <a href="tips.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Healthy Tips</a> 
+    <a href="measurements.html"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Body Measurements</a>	
+	<a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Communication</a>
+    <a href="foods.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Foods</a>
+	<a href="stats.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Statistics</a>
+	<a href="history.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">History</a>
+	<!--a href="index.html?logout='1'" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-red" style="color: red;">Logout</a-->
+	
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-sand w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-sand w3-margin-right" onclick="w3_open()">☰</a>
+  <span>User's Name </span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+	<h3 class="w3-xlarge"><b>Click on the foods you want to remove from your diet ... </b></h3>
+		<h3 class="w3-xlarge w3-text-red"><b>...our aim is a diet that you can follow.</b></h3>  
+  </div>
+
+
+<div class="container "> 
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default ">
+      <div class="panel-heading  ">
+        <h4 class="panel-title w3-sand">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Group1">Main Meals</a>		  
+        </h4>
+      </div>
+      <div id="Group1" class="panel-collapse collapse">
+        <div class="panel-body">
+		
+			<ul id="Main_Meals">
+				<li class="checked">Menu 0: Example</li>
+				<li id='1'>Menu 1: Quinoa </li>
+				<li id='2'>Menu 2: Bread </li>
+				<li id='3'>Menu 3: pasta </li>
+				<li id='4'>Menu 4: Noodles </li>
+				<li id='5'>Menu 5: soup  </li>
+				<li id='6'>Menu 6: vegetables </li>
+					
+			</ul>
+			
+			<h5><strong> Rice side </strong></h5> 		
+			<ul id="Main_Meals_rice">
+				<li id='7'>Menu 7:  something with rice</li>			
+				<li id='8'>Menu 8:  something with rice</li>
+				<li id='9'>Menu 9:  something with rice</li>
+				<li id='10'>Menu 10:  something with rice</li>			
+				<li id='11'>Menu 11:  something with rice </li>
+				<li id='12'>Menu 12:  something with rice </li>
+				<li id='13'>Menu 13:  something with rice</li>
+				<li id='14'>Menu 14:  something with rice </li>
+				<li id='15'>Menu 15:  something with rice</li>
+				<li id='16'>Menu 16:  something with rice</li>
+			</ul>
+			
+			<h5><strong> Potatoes side </strong></h5> 		
+			<ul id="Main_Meals_potatoes">
+				<li id='17'>Menu 17:  something with potatoes</li>			
+				<li id='18'>Menu 18:  something with potatoes</li>
+				<li id='19'>Menu 19:  something with potatoes</li>
+				<li id='20'>Menu 20:  something with potatoes</li>			
+				<li id='21'>Menu 21:  something with potatoes </li>
+				<li id='22'>Menu 22:  something with potatoes </li>
+				<li id='23'>Menu 23:  something with potatoes</li>
+				<li id='24'>Menu 24:  something with potatoes </li>
+				<li id='25'>Menu 25:  something with potatoes</li>
+				<li id='26'>Menu 26:  something with potatoes</li>
+			</ul>
+		</div>
+      </div>
+	 </div>
+	 
+	 
+	<div class="panel panel-default">
+      <div class="panel-heading ">
+        <h4 class="panel-title  w3-sand ">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Group4">Breakfast</a>
+        </h4>
+      </div>
+      <div id="Group4" class="panel-collapse collapse">
+        <div class="panel-body">
+			<ul id="breakfast">
+				<li id='0'>Tost </li>
+				<li id='1'>Cereal with milk </li>
+				<li id='2'>oats with milk </li>
+				<li id='3'>yogurt </li>
+				<li id='4'>eggs</li>
+				<li id='5'> Sandwich </li>					
+			</ul>
+		</div>
+	  </div>
+   </div>
+   
+   
+	<div class="panel panel-default">
+      <div class="panel-heading ">
+        <h4 class="panel-title  w3-sand ">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Group2">Salads</a>
+        </h4>
+      </div>
+      <div id="Group2" class="panel-collapse collapse">
+        <div class="panel-body">
+		<ul id="Salad_Meals">
+			<li id='0' class='checked'>Menu 0: Example</li>
+			<li id='1'>Menu 1: Salad    </li>
+			<li id='2'>Menu 2: Salad  </li>
+			<li id='3'>Menu 3: Salad   </li>
+			<li id='4'>Menu 4: Salad  </li>
+			<li id='5'>Menu 5: Salad  </li>
+			<li id='6'>Menu 6: Salad </li>
+			<li id='7'>Menu 7: Salad </li>	
+			<li id='8'>Menu 8: Salad </li>	
+			<li id='9'>Menu 9: Salad </li>	
+						
+		</ul>
+		</div>
+	  </div>
+   </div>
+    <div class="panel panel-default">
+      <div class="panel-heading ">
+        <h4 class="panel-title  w3-sand ">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Group3">Legumes</a>
+        </h4>
+      </div>
+      <div id="Group3" class="panel-collapse collapse">
+        <div class="panel-body">
+			<ul id='Legumes'>
+			<li id='0'>  Legumes  1 <br>  </li>
+			<li id='1'>  Legumes  2 <br>  </li>
+			<li id='2'>  Legumes  3 <br>  </li>
+			<li id='3'>  Legumes  4 <br>  </li>
+			<li id='4'>  Legumes  5 <br>  </li>
+			<li id='5'>  Legumes  6 <br>  </li>
+			</ul>
+		
+		</div>
+	  </div>
+   </div>
+
+ 
+     
+   <div class="panel panel-default">
+      <div class="panel-heading ">
+        <h4 class="panel-title  w3-sand ">
+          <a data-toggle="collapse" data-parent="#accordion" href="#Group5">Fruits and juice </a>
+        </h4>
+      </div>
+      <div id="Group5" class="panel-collapse collapse">
+        <div class="panel-body">
+			<ul id='fruits'>
+			<li id='0'>  Fruit  1 <br>  </li>
+			<li id='1'>  Fruit  2 <br>  </li>
+			<li id='2'>  Fruit  3 <br>  </li>
+			<li id='3'>  Fruit  4 <br>  </li>
+			<li id='4'>  Fruit  5 <br>  </li>
+			<li id='5'>  Fruit  6 <br>  </li>
+			</ul>
+		</div>
+	  </div>
+   </div>
+   
+    
+   
+
+   
+   
+  </div> 
+</div>
+	<!--style="width:400px" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32-->
+	<form role="form" style="width:400px" action="diet.html" method="post" id="preferences-form" class="preferences-form">	
+		<input id="0" type="hidden" name="Main_Meals" value = " 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 ">
+		<input id="1" type="hidden" name="Salad_Meals" value = " 1 2 3 4 5 6 7 8 9 " >
+		<input id="2" type="hidden" name="Breakfast" value = " 1 2 3 4 5 ">
+		<input id="3" type="hidden" name="fruits" value ="  " >
+		<input id="4" type="hidden" name="Legumes"value =  " 14 15 16 17 18 19 20 21 22 ">
+		
+		<button style="width:300px" name="savePreferences" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Save preferences</button>
+	</form>
+</div>
+    <!-- !PAGE CONTENT FINISH! -->
+	
+<script>
+var Main_Meals = " 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 ";
+var Breakfast = " 1 2 3 4 5 ";
+var Salad_Meals = " 1 2 3 4 5 6 7 8 9 ";
+var fruits = " ";
+var Legumes = " 14 15 16 17 18 19 20 21 22 ";
+var space = " ";
+  // Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('#Main_Meals');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+	if(ev.target.className=='checked'){
+		var IDwithspace = space.concat(ev.target.id, space);
+		Main_Meals = Main_Meals.replace(IDwithspace, " ");					
+	}else{
+		Main_Meals = Main_Meals.concat(ev.target.id, space);		
+	}
+	document.getElementById("preferences-form")[0].value = Main_Meals;	
+  }
+}, false );
+var list = document.querySelector('#Main_Meals_rice');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+	if(ev.target.className=='checked'){
+		var IDwithspace = space.concat(ev.target.id, space);
+		Main_Meals = Main_Meals.replace(IDwithspace, " ");			
+	}else{
+		Main_Meals = Main_Meals.concat(ev.target.id, space);
+	}
+	document.getElementById("preferences-form")[0].value = Main_Meals;	
+  }
+}, false);
+
+
+var list = document.querySelector('#Main_Meals_potatoes');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+	if(ev.target.className=='checked'){
+		var IDwithspace = space.concat(ev.target.id, space);
+		Main_Meals = Main_Meals.replace(IDwithspace, " ");			
+	}else{
+		Main_Meals = Main_Meals.concat(ev.target.id, space);
+	}
+	document.getElementById("preferences-form")[0].value = Main_Meals;
+  }
+}, false);
+
+
+var list = document.querySelector('#Salad_Meals');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+	if(ev.target.className=='checked'){
+		var IDwithspace = space.concat(ev.target.id, space);
+		Salad_Meals = Salad_Meals.replace(IDwithspace, " ");			
+	}else{
+		Salad_Meals = Salad_Meals.concat(ev.target.id, space);
+	}
+	document.getElementById("preferences-form")[1].value = Salad_Meals;	
+  }
+}, false);
+var list = document.querySelector('#Legumes');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+	if(ev.target.className=='checked'){
+		var IDwithspace = space.concat(ev.target.id, space);
+		Legumes = Legumes.replace(IDwithspace, " ");			
+	}else{
+		Legumes = Legumes.concat(ev.target.id, space);
+	}
+	document.getElementById("preferences-form")[4].value = Legumes;	
+  }
+}, false);
+var list = document.querySelector('#breakfast');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+	if(ev.target.className=='checked'){
+		var IDwithspace = space.concat(ev.target.id, space);
+		Breakfast = Breakfast.replace(IDwithspace, " ");			
+	}else{
+		Breakfast = Breakfast.concat(ev.target.id, space);
+	}
+	document.getElementById("preferences-form")[2].value = Breakfast;	
+  }
+}, false);
+var list = document.querySelector('#fruits');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+	if(ev.target.className=='checked'){
+		var IDwithspace = space.concat(ev.target.id, space);
+		fruits = fruits.replace(IDwithspace, " ");			
+	}else{
+		fruits = fruits.concat(ev.target.id, space);
+	}
+	document.getElementById("preferences-form")[3].value = fruits;
+  }
+}, false);
+ 
+
+</script>
+</body>
+</html>

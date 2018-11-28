@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Statistics Page </title>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" href="../assets/img/logo.png" sizes="16x16">
+
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link href="css/elements.css" rel="stylesheet">		
+	<script src="js/my_js.js"></script>
+</head>
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+
+</style>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Date', 'Weight'],
+          ['1',  87.6],
+          ['2',  87.9],
+		  ['3',  87.7],
+	      ['4',  87.6],
+		  ['5',  87.4],
+		  ['6',  87.1],
+          ['7',  86.9], 
+		  ['8',  86.3],
+		  ['9',  86.6],
+          ['10',  86.8],
+										
+        ]);
+
+        var options = {
+          title: 'Last 10 Weeks Weight',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+
+ </script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'KCAL'],
+  ['KCAL', 8],
+  ['Carbs', 2],
+  ['Protein', 4],
+  ['Fat', 2],
+])
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Wednesday 28/11/2018', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>	
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<body id="body" style="overflow:hidden;">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-sand w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+  
+    <h3 class="w3-padding-64">User's Name</b></h3>
+    
+  </div>
+  <div class="w3-bar-block"> 
+	<a id="myDiet" href= "home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Create a diet plan</a>     
+	<a href= "checklist.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Adjust Food Preferences </a> 
+    <a href="tips.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Healthy Tips</a> 
+    <a href="measurements.html"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Body Measurements</a>	
+	<a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Communication</a>
+    <a href="foods.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Foods</a>
+	<a href="stats.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Statistics</a>
+	<a href="history.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">History</a>
+	<!--a href="index.html?logout='1'" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-red" style="color: red;">Logout</a-->
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-sand w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-sand w3-margin-right" onclick="w3_open()">☰</a>
+  <span>User's Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-right:30px">
+
+<button class="tablink" onclick="openPage('Weekly weight', this, 'red')">Weekly weight</button>
+<button class="tablink" onclick="openPage('Todays intake', this, 'green')" id="defaultOpen">Todays intake</button>
+<button class="tablink" onclick="openPage('BMI', this, 'blue')">BMI</button>
+
+<div id="Weekly weight" class="tabcontent">
+  <h3 style="color :red" > Weekly weight </h3>
+  <!-- Weekly weight statistics should be here-->
+  <div id="curve_chart" style="width: 50%	; height: 50%;"></div>
+  
+  <!--p>Home is where the heart is..</p-->
+</div>
+<div id="Todays intake" class="tabcontent">
+  <h3 style="color :green " >Today's intake</h3>
+  <!-- Todays intake statistics should be here-->
+  
+  <div id="piechart"></div>
+  
+  <!--p>Some news this fine day!</p--> 
+</div>
+
+<div id="BMI" class="tabcontent">
+
+  <h3 style="color :blue " >BMI</h3>
+  <!--BMI Statistics should be here-->
+<html>
+<body>
+
+<embed type="msexcel"
+       src="bmi.xlsx"
+       width="250"
+       height="200">
+<!--embed src="bmi.xlsx"-->
+<!--object data="bmi.xlsx" type="application/msexcel" width="775px" height="500px"></a-->
+
+</body>
+</html>
+
+  <!--p>Get in touch, or swing by for a cup of coffee.</p-->
+</div>
+   
+    <!-- !PAGE CONTENT FINISH! -->
+</body>
+</html>
