@@ -8,14 +8,22 @@
 <link rel="stylesheet" type="text/css" href="css/mystyle.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link href="css/elements.css" rel="stylesheet">
-
+<style>
+body  {
+    background-image: url("images/Backround.jpg");
+}
+</style>
 </head>
 <script src="js/my_js.js"></script>
 <script src="../runing_minizinc.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 <style>
-
-
+body,h1,h2,h3,h4,h5 {
+font-family: 'Segoe Script', sans-serif;
+}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
 </style>
 <script type="text/javascript"> 
    $(function() {
@@ -74,11 +82,14 @@
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
     <h1 class="w3-jumbo"><b>A Healthy diet just for you... </b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>Welcome.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-black"><b>Welcome.</b></h1>
 	
   </div>
 <!-- Photo grid (modal) -->
+	
+
   <div class="w3-row-padding">
+
     <div class="w3-half">
       <img src="images/BMI-o.jpg" style="width:100%" onclick="div_show('abc')" alt="preparing salad">
       <img src="images/happiness.png" style="width:100%" onclick="div_show('abcdef')" alt="happy face">                 
@@ -95,17 +106,27 @@
  
   <!-- Popup Div Starts Here -->
 <div id="popupContact">
-<form action="#" id="form" method="post" name="form">
+<form action="#" id="form" method="value" name="form">
 <img id="close" src="images/close-icon.png" onclick ="div_hide('abc')" width="35" height="35">
 <h2>BMI calculator</h2>
 <hr>
 <input id="age" name="age" placeholder="Age" type="text">
 <input id="height" name="height" placeholder="Height (1.83 m)" type="text">
-<input id="kilos" name="kilos" placeholder="Weight (75.8 kg)" type="text">
-<p id="demo"></p>
-<a href="" id="submit">Calculate</a>
-<p> </p>
+<input id="kilos" name="kilos" placeholder="Weight (75.8 kg)" type="text"><br>
+
+<button type="submit" id="submit" onclick ="myFunction()">Calculate</button>
 </form>
+
+<script>
+function myFunction() {
+	var x = document.getElementById("form").element[0].value;
+	var x1 = document.getElementById("form").element[1].value;
+	var x2 = document.getElementById("form").element[2].value;
+	
+	var bmi = x2 / (x1*x1);
+	
+</script>
+
 </div>
 <!-- Popup Div Ends Here -->
 </div>
@@ -149,7 +170,7 @@
 Your diet plan is for 2537 kcal and <br>
 is suitable for  a woman with height 1.75 m and <br>
 weight 65 kg. Also, you follow  a slightly active lifestyle <br>
-and you have as goal a weight gaining <br>
+and you have as goal /a weight gaining <br>
 If you want to adjust any of the above details please clik <a href="updateData.html"><strong>HERE</strong></a> </h4>
 <button type="submit" id="submit" >Show diet-plan!</button>
 <br> 

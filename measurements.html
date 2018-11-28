@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<title>Healthy Diet</title>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="../assets/img/logo.png" sizes="16x16">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link href="css/elements.css" rel="stylesheet">
+<style>
+body  {
+    background-image: url("images/Backround.jpg");
+}
+</style>
+</head>
+<script src="js/my_js.js"></script>
+<script src="../runing_minizinc.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<style>
+body,h1,h2,h3,h4,h5 {
+font-family: 'Segoe Script', sans-serif;
+}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+
+<body id="body" style="overflow:hidden;">
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-sand w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64">User's Namebr></b></h3>
+  </div>
+  
+  </div>
+   <div class="w3-bar-block">
+    <a id="myDiet" href= "home.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Create a diet plan</a>     
+	<a href= "checklist.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Adjust Food Preferences </a> 
+    <a href="tips.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Healthy Tips</a> 
+    <a href="measurements.html"  onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Body Measurements</a>	
+	<a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Communication</a>
+    <a href="foods.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Foods</a>
+	<a href="stats.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Statistics</a>
+	<a href="history.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">History</a>
+	<!--a href="index.html?logout='1'" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-red" style="color: red;">Logout</a-->
+  </div>
+ 
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-sand w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-sand w3-margin-right" onclick="w3_open()">☰</a>
+  <span>User's Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+
+<!-- Photo grid (modal) -->
+ 
+
+<!--http://www.sci-unisonfitness.com/body-tape-measurements-lj/-->
+
+  <!-- Popup Div Starts Here -->
+<div id="popupContact">
+<form role="form" action="measurements.html" method="post" class="measurements-form">
+<img id="close" src="images/close-icon.png" onclick ="div_hide('abcd')" width="35" height="35">
+<h2>Body Measurements</h2>
+<hr>
+
+<input id="height" name="height" placeholder=" height (m)"  type="text"style="width:200px">
+<input id="kilos" name="kilos" placeholder= " kilos (kg)"  type="text"style="width:200px">
+<input id="age" name="age" placeholder="age " type="text"style="width:200px">
+<input id="chest" name="chest" placeholder="chest (cm) " type="text"style="width:200px">
+<input id="left-arm" name="left-arm" placeholder="arm (cm)" type="text"style="width:200px">
+<input id="waist" name="waist" placeholder="waist(cm)" type="text"style="width:200px">
+<input id="hips" name="hips" placeholder="hips(cm)" type="text"style="width:200px">
+<input id="thigh" name="thigh" placeholder="thigh (cm)" type="text"style="width:200px">
+<br> <br>
+<button type="submit" id="submit" name="submit_measurement">SAVE!</button>
+<br> 
+</form>
+</div>
+<!-- Popup Div Ends Here -->
+
+
+</div>
+</body>
+</html>
